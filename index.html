@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+{
+    margin: 0px;
+}
+.main-nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(10, 60, 124);
+
+}
+.main-nav h1
+{
+    color: whitesmoke;
+    font-size: 25px;
+    /* margin-left: 50px; */
+}
+.main-nav label
+{
+    color: whitesmoke;
+}
+
+
+.main-nav button , .main-content button
+{
+    background-color:green;
+    color: whitesmoke;
+    padding: 5px 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.main-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+.main-content img
+{
+    margin-top: 50px;
+    height: 500px;
+}
+.main-content h1
+{
+    margin: 0px;
+    font-size: 40px;
+}
+.main-content #tagline
+{
+    font-size: 20px;
+}
+.main-content article
+{
+    line-height: 35px;
+    margin-right: 200px;
+}
+input[type='text'], input[type='password']
+{
+    color: gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.long-width
+{
+    width: 200px;
+    
+}
+footer
+{
+    background-color: rgb(10, 60, 124);
+    padding: 1px;
+}
+
+
+@media(max-width: 500px)
+{
+    .main-nav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .main-nav div
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .main-nav div button
+    {
+        margin-top: 10px;
+        align-items: center;
+    }
+    .main-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .main-content img 
+    {
+        height: 400px;
+    }
+    .main-content article h1
+    {
+        margin-left: 200px;
+        font-size: 35px;
+    }
+    #tagline
+    {
+        margin-left: 200px;
+    }
+    .details
+    {
+        margin-left: 200px;
+    }
+    .details button
+    {
+        margin-left: 130px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }  
+}
+
+
+@media(min-width: 501px) and (max-width: 720px)
+{
+    .main-nav
+    {
+        flex-direction: column;
+    }
+    .main-nav div
+    {
+        margin-top: 2px;
+        margin-bottom: 56px;
+    }
+}
+
+@media(max-width: 721px) and (min-width: 920px)
+{
+    .main-nav
+    {
+        flex-direction: column;
+    }
+    .main-nav div
+    {
+        margin-top: 2px;
+        margin-bottom: 56px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <h1>facebook</h1>
+    <div>
+        <label for="">Username</label>
+        <input type="text" placeholder="Enter Username">
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter Password">
+        <button>Login</button>
+    </div>
+    </nav>
+
+    <section class="main-content">
+        <!--<img src="https://waichung2848t.files.wordpress.com/2012/11/fb-connection.jpg" width="900px" alt="">-->
+        <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="900px" height="10px" alt="Facebook">
+        <article>
+            <h1>Create a new account</h1>
+            <label id="tagline">It's quick and easy.</label>
+            <div class="details">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Surname">
+            </div>
+            <div class="details">
+                <input style="width: 353px;" type="text" placeholder="Mobile number or email address">
+            </div>
+           <div class="details">
+                <input style="width: 353px;" type="password" placeholder="New password">
+           </div>
+           <div class="details">
+                <input style="width: 353px;" type="password" placeholder="Confirm password">
+           </div>
+           <div class="details">
+               <label>Date of Birth</label>
+           </div>
+           <div class="details">
+            <select>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select>
+            <select>
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+                <option value="">Mar</option>
+                <option value="">Apr</option>
+                <option value="">May</option>
+                <option value="">June</option>
+                <option value="">July</option>
+                <option value="">Aug</option>
+                <option value="">Sep</option>
+                <option value="">Oct</option>
+                <option value="">Nov</option>
+                <option value="">Dec</option>
+            </select>
+            <select>
+                <option value="">1990</option>
+                <option value="">1991</option>
+                <option value="">1992</option>
+                <option value="">1993</option>
+                <option value="">1994</option>
+                <option value="">1995</option>
+                <option value="">1996</option>
+                <option value="">1997</option>
+                <option value="">1998</option>
+                <option value="">1999</option>
+                <option value="">2000</option>
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+            </select>
+           </div>
+           <div class="details">
+               <label> Gender</label>
+           </div>
+           <div class="details">
+               <input type="radio" name="radiob">Female
+               <input type="radio" name="radiob">Male
+               <input type="radio" name="radiob">Customs
+           </div>
+           <div class="details">
+               <button>Sign Up</button>
+           </div>
+        </article>
+    </section>
+    <footer>
+        <!-- <p>English(UK)  Hindi  Odia  Marathi  Kanada  Telgu  Tamil  Malayalayam Begali</p> -->
+        <p style="color: white" >facebook &copy; 2021
+           
+                This page is maintained and developed by<a href="https://fb.com/abhisek.mishra.5036"> <span style="color:red">Abhisek Mishra</span></a>
+          
+        </p>
+    </footer>
+    
+</body>
+</html>
+
+
+ 
